@@ -58,44 +58,6 @@ public class Calculadora {
         }
     }
 }
-        // ------ PAREI AQUI ---- //
 
-        // Escolher operação com base na entrada do usuário
+// ------ PAREI AQUI ---- //
 
-        //Soma, subtração, multiplicação e divisão
-
-
-        /* Chamando os métodos e armazenando os resultados
-        double resultadoSoma = somar(a, b);
-        double resultadoSubtracao = subtrair(a, b);
-        double resultadoMultiplicacao = multiplicar(a, b);
-        double resultadoDivisao = dividir(a, b); // tem que tratar a divisão por zero
-
-        // Exibir os resultados
-        System.out.println("\nResultados: ");
-        System.out.println(" Soma: " + resultadoSoma);
-        System.out.println(" Subtração: " + resultadoSubtracao);
-        System.out.println(" Multiplicação: " + resultadoMultiplicacao);
-        System.out.println(" Divisão: " + resultadoDivisao);
-
-        scanner.close(); //Precisa ser fechado o scanner
-    }
-
-    //Metodos para soma, subtração, multiplicação e divisão
-    public  static double somar(double a, double b){
-        return a+b;
-    }
-    public static double subtrair(double a, double b){
-        return a-b;
-    }
-    public static double multiplicar(double a, double b){
-        return a*b;
-    }
-    public static double dividir(double a , double b) {
-        if (b == 0){
-            System.out.println("Erro: Divisão por zero!");
-            return 0;
-        }
-        return a/b;
-    }
-}*/
