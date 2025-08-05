@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 
 public class Calculadora {
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);// Criando o Scanner para capturar entrada do usuário
 
 
@@ -15,6 +16,8 @@ public class Calculadora {
         double b = scanner.nextDouble(); // para ler o segundo número
 
         //solicitar operação para o usuário
+        //menu
+        System.out.println();
         System.out.println("\nEscolha a operação: ");
         System.out.println("1 - Soma");
         System.out.println("2 - Subtração");
@@ -22,12 +25,39 @@ public class Calculadora {
         System.out.println("4 - Divisão");
         System.out.println("Digite o número da operação escolhida: ");
 
-        double operacao = scanner.nextDouble(); // para ler a operação escolhida
+        int operacao = scanner.nextInt(); // para ler a operação escolhida
 
-        // Operação escolhida
-        double resultado = 0;
-                boolean operacaoValida = true; // Variável para verificar se é valido
 
+        // Operação
+
+        switch (operacao) {
+            case 1:
+                System.out.println("Você escolheu soma!");
+                System.out.println("Resultado: " + (a + b));
+                break;
+
+            case 2:
+                System.out.println("Você escolheu subtração!");
+                System.out.println("Resultado: " + (a - b));
+                break;
+
+            case 3:
+                System.out.println("Você escolheu Multiplicação!");
+
+                System.out.println("Resultado: " + (a * b));
+                break;
+
+            case 4:
+                System.out.println("Você escolheu Divisão!");
+                System.out.println("Resultado: " + (a / b));
+                break;
+
+            default:
+                System.out.println(("Opção inválida!"));
+
+        }
+    }
+}
         // ------ PAREI AQUI ---- //
 
         // Escolher operação com base na entrada do usuário
@@ -35,10 +65,10 @@ public class Calculadora {
         //Soma, subtração, multiplicação e divisão
 
 
-        // Chamando os métodos e armazenando os resultados
-        double resultadoSoma = somar(a ,b );
+        /* Chamando os métodos e armazenando os resultados
+        double resultadoSoma = somar(a, b);
         double resultadoSubtracao = subtrair(a, b);
-        double resultadoMultiplicacao = multiplicar(a , b);
+        double resultadoMultiplicacao = multiplicar(a, b);
         double resultadoDivisao = dividir(a, b); // tem que tratar a divisão por zero
 
         // Exibir os resultados
@@ -68,4 +98,4 @@ public class Calculadora {
         }
         return a/b;
     }
-}
+}*/
